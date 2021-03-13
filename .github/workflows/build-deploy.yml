@@ -13,7 +13,7 @@ jobs:
 
       - name: Install Dependicies
         run: |
-          npm Install
+          npm install
 
       - name: Build Ngaox-ui
         run: |
