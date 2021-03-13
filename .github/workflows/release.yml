@@ -2,7 +2,6 @@ name: new release
 on:
   release:
     types: [created]
-    branches: [gh-pages]
 jobs:
   publish-ngaox:
     runs-on: ubuntu-latest
