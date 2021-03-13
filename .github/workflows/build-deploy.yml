@@ -21,6 +21,8 @@ jobs:
 
       - name: Prepare dist folder
         run: |
+          mkdir dist
+          mkdir dist/ngaox-ui
           cp -a projects/ngaox-ui/dist/. dist/ngaox-ui
 
       - name: Deploy 🚀
