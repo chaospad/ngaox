@@ -1,0 +1,36 @@
+name: 🚀 Build and Deploy
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build-libraries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 
+        with:
+          persist-credentials: false
+
+      - name: Install Dependicies
+        run: |
+          npm Install
+
+      - name: Build Ngaox-ui
+        run: |
+          npm build:prod:ngaoxUi
+  deploy:
+    needs: build-libraries
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 
+        with:
+          persist-credentials: false
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: dist # The folder the action should deploy.
+          CLEAN: true

@@ -5,22 +5,23 @@
   "style": "css/ngaox-ui.css",
   "main": "js/ngaox-ui.js",
   "scripts": {
-    "start": "npm run build-scss -- -w",
-    "build": "npm run build-js && npm run build-scss -- --output-style compressed",
+    "start": "npm run build-js && npm run build-scss -- -w",
+    "build": "npm run build-js && npm run build-scss -- --output-style compressedt",
+    "build:prod": "npm run build && npm run copy-to-dist",
     "build-scss": "node-sass src/scss/themes/ -o dist/css/",
-    "build-js": "webpack"
+    "build-js": "webpack",
+    "copy-to-dist": "cp package.json dist/package.json && cp README.md dist/README.md"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chaospad/ngaox.git"
   },
   "keywords": [
-    "CSS",
+    "ngaox",
     "SCSS",
-    "SASS",
     "JS",
-    "Front-end",
-    "chaospad"
+    "ui/ux",
+    "Front-end"
   ],
   "author": "Rabyâ Raghib",
   "license": "ISC",

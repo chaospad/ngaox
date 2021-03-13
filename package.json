@@ -7,8 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "ngaoxUi-start": "cd projects/ngaox-ui/ && npm start",
-    "ngaoxUi-build": "cd projects/ngaox-ui/ && npm run build"
+    "start:ngaoxUi": "cd projects/ngaox-ui/ && npm start",
+    "build:ngaoxUi": "cd projects/ngaox-ui/ && npm run build",
+    "build:prod:ngaoxUi": "cd projects/ngaox-ui/ && npm run build:prod"
   },
   "private": true,
   "dependencies": {
