@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  build-libraries:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -18,18 +18,10 @@ jobs:
       - name: Build Ngaox-ui
         run: |
           npm run build:prod:ngaoxUi
-  deploy:
-    needs: build-libraries
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 
-        with:
-          persist-credentials: false
 
       - name: Prepare dist folder
         run: |
-          cp -a projects\ngaox-ui\dist\. dist\ngaox-ui\
+          cp -a projects/ngaox-ui/dist/. dist/ngaox-ui
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -37,4 +29,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: dist # The folder the action should deploy.
-          CLEAN: true
