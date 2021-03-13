@@ -27,6 +27,10 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Prepare dist folder
+        run: |
+          cp -a ./projects/ngaox-ui/dist/. ./dest/
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
