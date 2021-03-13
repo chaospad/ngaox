@@ -1,0 +1,44 @@
+$info-primary-color: #e13f0f;
+$info-white-space-size: $padding;
+
+.info-box {
+    .info {
+        padding: $info-white-space-size;
+        .logo {
+            font-size: 40px;
+            text-align: center;
+            color: $info-primary-color;
+        }
+        .value {
+            margin: 0;
+            .type{
+                display: block;
+                font-weight: $strong-fontWeight;
+                font-size: $fontSize;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+        }
+        &:not(.collapsed){
+            @extend .chaos-box;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: $info-white-space-size;
+        }
+        &.collapsed{
+            display: flex;
+            padding: 0;
+            .logo {
+                font-size: 16px;
+                margin-right: 10px;
+            }
+            .value {
+                font-size: $fontSize;
+                margin: 0;
+                .type{
+                    display: none;
+                }
+            }
+        }
+    }
+}

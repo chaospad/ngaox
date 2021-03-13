@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ngaox": {
+      "projectType": "library",
+      "root": "projects/ngaox",
+      "sourceRoot": "projects/ngaox/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngaox/tsconfig.lib.json",
+            "project": "projects/ngaox/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngaox/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngaox/src/test.ts",
+            "tsConfig": "projects/ngaox/tsconfig.spec.json",
+            "karmaConfig": "projects/ngaox/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngaox/tsconfig.lib.json",
+              "projects/ngaox/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngaox"
 }

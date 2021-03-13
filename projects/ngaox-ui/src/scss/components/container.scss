@@ -1,0 +1,54 @@
+/* ========================================================================
+container:
+    .container
+    .*-box
+    .container-${ xsmall | small | large | xlarge | expand}
+========================================================================== */
+
+// Variables
+$container-max-width: 1200px !default;
+$container-xsmall-max-width: 750px !default;
+$container-small-max-width: 900px !default;
+$container-large-max-width: 1400px !default;
+$container-xlarge-max-width: 1600px !default;
+$container-padding: 15px !default;
+$container-background: $background;
+$container-boxShadow: $boxShadow;
+
+.container {
+    display: flow-root;
+    max-width: $container-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+
+    &-xsmall, &-small,
+    &-large, &-xlarge,
+    &-expand { @extend .container; }
+    
+    &-xsmall { max-width: $container-xsmall-max-width; }
+    &-small { max-width: $container-small-max-width; }
+    &-large { max-width: $container-large-max-width; }
+    &-xlarge { max-width: $container-xlarge-max-width; }
+    &-expand { max-width: none; }
+}
+
+.chaos-box{
+    box-shadow: $container-boxShadow;
+    background-color: $container-background;
+}
+.chaos-box .chaos-box{
+    box-shadow: none;
+    padding: 0;
+}
+// remove margin from the last-child
+.container > :last-child { margin-bottom: 0; }
+
+// remove padding from containers in a container
+.container .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// diffrent size of containers

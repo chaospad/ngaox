@@ -1,0 +1,53 @@
+.auth-container{
+    @extend .container-expand;
+    @extend .center-child;
+    min-height: 100%;
+    padding: $padding;
+    overflow: auto;
+    background-color: $dark-background;
+    .auth-form{
+        @extend .chaos-box;
+        padding: $padding-small;
+        width: 500px;
+        > *:not(:last-child){
+            margin-bottom: $margin;
+        }
+        > h1 {
+            line-height: unset;
+            font-weight: 700;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 1.17em;
+            font-size: xx-large;
+            color: #000;
+            text-align: center;
+        }
+        > span {
+            display: block;
+            text-align: center;
+        }
+        .form-fields{
+            > .fullname {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            > *:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+        .auth-actions {
+            > a {
+                display: inline-block;
+                text-align: center;
+                line-height: 30px;
+                width: 100%;
+            }
+        }
+        .auth-form-submit {
+            @extend .button;
+            margin: auto;
+            display: block;
+        }
+    }
+}

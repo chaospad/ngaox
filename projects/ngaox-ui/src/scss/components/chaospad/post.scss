@@ -1,0 +1,16 @@
+.post-box {
+    @extend .chaos-box;
+    padding: $padding-small;
+    > *:not(:last-child){
+        margin-bottom: $margin;
+    }
+    .post {
+        .title{
+            padding: 0 $padding;
+            text-align: center;
+        }
+        .thumbnail {
+            @include bachround-img();
+        }
+    }
+}

@@ -1,0 +1,18 @@
+/* ========================================================================
+drop:
+    .drop
+    .drop.open
+========================================================================== */
+$drop-z-index:                               $z-index + 20 !default;
+$drop-width:                                 300px !default;
+$drop-margin:                                $margin !default;
+
+// drop
+.drop {
+    display: none;
+    position: absolute;
+    z-index: $drop-z-index;
+    box-sizing: border-box;
+    width: $drop-width;
+}
+.drop.open { display: block; }

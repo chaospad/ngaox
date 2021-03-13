@@ -1,0 +1,43 @@
+/* sizes */
+$xxlarge-fontSize: 2.5rem !default;
+$xlarge-fontSize: 2rem !default;
+$large-fontSize: 1.5rem !default;
+$medium-fontSize: 1.25rem !default;
+$fontSize: 1rem !default;
+$small-fontSize: 0.85rem !default;
+// colors
+$color: #333 !default;
+$muted-color: #666 !default;
+$inverse-color: #fff !default;
+$emphasis-color: #000 !default;
+// background
+$background: #fff !default;
+$primary-background: #1e87f0 !default;
+$danger-background: #f0506e;
+$muted-background: #f8f8f8 !default;
+$dark-background: #333 !default;
+$secondary-background: #222 !default;
+//fonts
+$lineHeight: 1.5 !default;
+$fontWeight: normal !default;
+$fontFamily: sans-serif !default;
+$fontSize: 16px !default;
+$small-fontSize: 80% !default;
+//margins / paddings
+$margin: 20px !default;
+$medium-margin: 30px !default;
+$margin-vertical: 20px !default;
+$padding: 40px !default;
+$padding-small: 24px !default;
+//borders
+$border-width: 1px !default;
+$border: #e5e5e5 !default;
+$boxShadow: 0 5px 10px rgba(0,0,0,.2) !default;
+
+$z-index: 1000;
+
+// Chaospad variables
+$cp-primary-color: #1ec0f0;
+$cp-secondary-color: #0d617a;
+$cp-icon-width: 50px;
+$cp-icon-fontSize: 25px;

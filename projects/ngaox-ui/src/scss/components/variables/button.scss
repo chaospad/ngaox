@@ -1,0 +1,47 @@
+$button-padding-horizontal: 20px !default;
+$button-font-size: $fontSize !default;
+$button-line-height: $lineHeight*1.5 !default;
+$button-disabled-border: $border;
+$button-border-width: $border-width;
+// disabled
+$button-disabled-background: $muted-background !default;
+$button-disabled-color: $muted-color !default;
+// primary - default
+$button-background: $primary-background !default;
+$button-color: $inverse-color !default;
+$button-hover-background: darken($button-background, 5%) !default;
+$button-hover-color: $inverse-color !default;
+$button-active-background: darken($button-background, 10%) !default;
+$button-active-color: $inverse-color !default;
+// secondary
+$button-secondary-background: $secondary-background !default;
+$button-secondary-color: $inverse-color !default;
+$button-secondary-hover-background: darken($button-secondary-background, 5%) !default;
+$button-secondary-hover-color: $inverse-color !default;
+$button-secondary-active-background: darken($button-secondary-background, 10%) !default;
+$button-secondary-active-color: $inverse-color !default;
+// danger
+$button-danger-background: $danger-background !default;
+$button-danger-color: $inverse-color !default;
+$button-danger-hover-background: darken($button-danger-background, 5%) !default;
+$button-danger-hover-color: $inverse-color !default;
+$button-danger-active-background: darken($button-danger-background, 10%) !default;
+$button-danger-active-color: $inverse-color !default;
+// other button size
+$button-small-font-size: $small-fontSize !default;
+$button-small-line-height: 40px !default;
+$button-small-padding-horizontal: 30px !default;
+$button-large-font-size: $medium-fontSize !default;
+$button-large-line-height: 40px !default;
+$button-large-padding-horizontal: 30px !default;
+// text button style
+$button-text-line-height: $lineHeight !default;
+$button-text-color: $muted-color !default;
+$button-text-hover-color: $color !default;
+$button-text-disabled-color: $muted-color !default;
+// link button style
+$button-link-line-height: $lineHeight !default;
+$button-link-color: $link-color !default;
+$button-link-hover-color: $link-hover-color !default;
+$button-link-hover-text-decoration: underline !default;
+$button-link-disabled-color: $muted-color !default;

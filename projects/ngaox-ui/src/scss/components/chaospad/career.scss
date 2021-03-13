@@ -1,0 +1,25 @@
+.career-box{
+    @extend .chaos-box;
+}
+.career {
+    border-color: $cp-primary-color!important;
+    padding: 18px;
+    padding-left: 30px;
+    border-left: 2px solid;
+    .title{ position: relative; }
+    .title::before {
+        content: '';
+        position: absolute;
+        left: -31px;
+        top: 4px;
+        width: 16px;
+        height: 16px;
+        border: 4px solid #57555f;
+        border-left: 0;
+        background-color: $cp-primary-color;
+    }
+    .info {
+        color: $cp-secondary-color;
+        font-weight: $strong-fontWeight;
+    }
+}

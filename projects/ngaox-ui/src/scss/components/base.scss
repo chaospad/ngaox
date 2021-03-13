@@ -1,0 +1,249 @@
+@import "./variables/base.scss";
+// scrollbar restyle
+*::-webkit-scrollbar {
+    width: $scrollbar-width;
+    height: $scrollbar-height;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-color;
+}
+*::-webkit-scrollbar-track {
+    background-color: $scrollbar-track-color;
+}
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+// root tags style
+html {
+    text-size-adjust: 100%;
+    background: $root-background;
+    color: $root-color;
+    line-height: $root-lineHeight;
+    // font
+    font-family: $root-fontFamily;
+    font-size: $root-fontSize;
+    font-weight: $root-fontWeight;
+}
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+// links style
+a {
+    color: $link-color;
+    text-decoration: $link-textDecoration;
+    cursor: pointer;
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-textDecoration;
+    }
+}
+
+/* Text level */
+abbr[title] {
+    text-decoration: underline dotted;
+}
+b,
+strong {
+    font-weight: $strong-fontWeight;
+}
+em {
+    color: $em-color;
+}
+q {
+    font-style: $quote-fontStyle;
+}
+small {
+    font-size: $small-fontSize;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+// put content on middle of its containner
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+// set height & max-width
+canvas,
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * Margins
+ */
+p,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure {
+    margin-bottom: $margin-vertical;
+}
+
+/* Headings
+ ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: $margin-vertical;
+    font-family: $heading-fontFamily;
+    font-weight: $heading-fontWeight;
+    color: $heading-color;
+    text-transform: $heading-textTransform;
+}
+
+/* sizes */
+
+h1 {
+    font-size: $h1-fontSize;
+    line-height: $h1-lineHeight;
+}
+h2 {
+    font-size: $h2-fontSize;
+    line-height: $h2-lineHeight;
+}
+h3 {
+    font-size: $h3-fontSize;
+    line-height: $h3-lineHeight;
+}
+h4 {
+    font-size: $h4-fontSize;
+    line-height: $h4-lineHeight;
+}
+h5 {
+    font-size: $h5-fontSize;
+    line-height: $h5-lineHeight;
+}
+h6 {
+    font-size: $h6-fontSize;
+    line-height: $h6-lineHeight;
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left: $list-paddingLeft;
+}
+
+/* hr */
+hr {
+    overflow: visible;
+    text-align: inherit;
+    margin: 0 0 $hr-margin-vertical 0;
+    border: 0;
+    border-top: $hr-border-width solid $hr-border;
+}
+
+/* code */
+:not(pre) > code,
+:not(pre) > kbd,
+:not(pre) > samp {
+    font-family: $code-fontFamily;
+    font-size: $code-fontSize;
+    color: $code-color;
+    white-space: nowrap;
+    padding: $code-padding-vertical $code-padding-horizontal;
+    background: $code-background;
+}
+
+pre {
+    font: $pre-fontSize unquote("/") $pre-lineHeight $pre-fontFamily;
+    color: $pre-color;
+    tab-size: 4;
+    overflow: auto;
+    padding: $pre-padding;
+    border: $pre-border-width solid $pre-border;
+    border-radius: $pre-border-radius;
+    background: $pre-background;
+}
+
+pre code {
+    font-family: $pre-fontFamily;
+}
+
+/* Blockquote */
+
+blockquote {
+    margin: 0 0 $blockquote-margin-vertical 0;
+    font-size: $blockquote-fontSize;
+    line-height: $blockquote-lineHeight;
+    font-style: $blockquote-fontStyle;
+    color: $blockquote-color;
+}
+// remove bottom margin of the last child
+blockquote *:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Add margin if adjacent element */
+* + p,
+* + ul,
+* + ol,
+* + dl,
+* + pre,
+* + address,
+* + fieldset,
+* + figure {
+    margin-top: $margin-vertical;
+}
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+    margin-top: $heading-margin-top;
+}
+* + hr {
+    margin-top: $hr-margin-vertical;
+}
+* + blockquote {
+    margin-top: $blockquote-margin-vertical;
+}
+
+/* add selection style to all elements */
+::selection {
+    background: $selection-background;
+    color: $selection-color;
+    text-shadow: none;
+}
+/* correct browser default display */
+details,
+main {
+    display: block;
+}
+summary {
+    display: list-item;
+}
+template {
+    display: none;
+}

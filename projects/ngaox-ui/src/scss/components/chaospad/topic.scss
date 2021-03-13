@@ -1,0 +1,49 @@
+.topic-box{
+    position: relative;
+    display: inline-block;
+    .hashtag:hover + .topic.preview {
+        @extend .drop.open;
+    } 
+}
+.topic{
+    @extend .chaos-box;
+    min-width: 300px;
+    &.preview {
+        @extend .drop;
+    }
+    .topic-inline{
+        @include inline();
+        padding-left: $cp-icon-width;
+        border-bottom: 2px solid $dark-background;
+        .icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: $cp-icon-width;
+            font-size: $cp-icon-fontSize;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $dark-background;
+            color: lighten($color: $dark-background, $amount: 70);
+        }
+        h2 {
+            min-height: 50px;
+            padding: 5px $padding-small;
+            padding-right: $padding-small/2;
+            line-height: $cp-icon-width - 10px;
+            margin: 0;
+            font-size: 20px;
+            > a.topic-custom-route {
+                font-size: $fontSize;
+                float: right;
+                text-transform: capitalize;
+            }
+        }
+    }
+    .topic-info {
+        margin: 0;
+        padding: $padding-small;
+    }
+}

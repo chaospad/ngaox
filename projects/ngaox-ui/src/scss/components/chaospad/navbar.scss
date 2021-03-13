@@ -1,0 +1,57 @@
+.navbar-box {
+    overflow: auto;
+    background-color: #4869ee; 
+    color: #fff;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
+    .navbar-header {
+        padding: 20px 20px 0;
+    }
+    .navbar {
+        li {
+            list-style: none;
+            .subroutes {
+                border-left: 20px solid;
+                border-color: #14212d7d;
+                border-top: 2px solid #e13f0f;
+                height: 0;
+                display: none;
+            }
+            .active ~ .subroutes {
+                display: block;
+                height: auto;
+            }
+            > a {
+                padding: 17px 20px;
+                display: block;
+                color: #fff;
+                user-select: none;
+                text-decoration: none;
+                cursor: pointer;
+                position: relative;
+                .icon {
+                    display: inline-block;
+                    width: 20px;
+                    margin-right: 10px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 3px;
+                    height: 100%;
+                    background: #e13f0f;
+                    display: none;
+                }
+                &:hover, &.active{
+                    background: #14212D;
+                    color: #fff;
+                    &::before {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

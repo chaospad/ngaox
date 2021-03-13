@@ -1,0 +1,104 @@
+$user-name-padding-horizontal: 10px;
+$username-color: $muted-color;
+$user-picture-width: 100px;
+$extra-info-color: $muted-color;
+$imgs-background: darken($color: $muted-background, $amount: 10);
+
+.user-box{
+    @extend .chaos-box;
+    padding: 25px;
+    overflow: hidden;
+    > *:not(:last-child){
+        margin-bottom: $margin;
+    }
+    .user {
+        .user-background {
+            @include bachround-img(1/4);
+        }
+        .user-picture{
+            position: relative;
+            border: 3px solid #fff;
+            width: $user-picture-width;
+            height: $user-picture-width;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: - $user-picture-width/2;
+            background-color: $imgs-background;
+        }
+        .user-name {
+            padding-left: $user-name-padding-horizontal;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: $h3-fontSize;
+            .username{
+                font-size: $h4-fontSize;
+                color: $username-color;
+            }
+        }
+    }
+    .user-info {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 2fr 1fr;
+        .user-bio{
+            padding-right: 15px;
+            margin: 0;
+            > p {
+                margin: 0;
+            }
+        }
+        .contact-info {
+            list-style: none;
+        }
+    }
+    .extra-info {
+        text-align: center;
+        > .info {
+            font-weight: $strong-fontWeight;
+            color: $extra-info-color;
+            white-space: nowrap;
+            .icon {
+                color: #e13f0f;
+                margin-right: 3px;
+            }
+        } 
+        > *:not(:last-child) {
+            margin-right: $margin;
+        }
+    } 
+    .cta {
+        @extend .center-child;
+        height: auto;
+        .button:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+}
+/*  
+.user-contact {
+    padding: 10px;
+    margin: $margin 0;
+    background-color: $muted-background;
+    .infos-container {
+        margin: auto;
+        width: max-content;
+        .info-box {
+            display: flex;
+            padding: 10px 25px;
+            font-weight: $strong-fontWeight;
+            color: $extra-info-color;
+            .logo {
+                font-size: 22px;
+                margin-right: 10px;
+            }
+            .value {
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
+}
+*/    

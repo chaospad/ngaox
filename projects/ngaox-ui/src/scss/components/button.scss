@@ -1,0 +1,142 @@
+/* ========================================================================
+button:
+    .button-group
+    .button (button)
+    .button-secondary
+    .button-danger
+    .button-small
+    .button-large
+    .button-text
+    .button-link
+========================================================================== */
+// Variables
+@import "./variables/button.scss";
+
+.button-group {
+    display: inline-flex;
+    vertical-align: middle;
+    position: relative;
+}
+// primary styling - default
+.button, button {
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 $button-padding-horizontal;
+    vertical-align: middle;
+    font-size: $button-font-size;
+    line-height: $button-line-height;
+    text-align: center;
+    background-color: $button-background;
+    color: $button-color;
+    border: $button-border-width solid transparent;
+    /* remove a text decoration */
+    text-decoration: none;
+}
+
+.button:not(:disabled),
+button:not(:disabled) { cursor: pointer; }
+
+.button:hover, button:hover,
+.button:focus, button:focus
+{
+    background-color: $button-hover-background;
+    color: $button-hover-color;
+    /* remove a text decoration */
+    text-decoration: none;
+    /* remove a that weird outline */
+    outline: none;
+}
+
+.button:active, .button.active,
+button:active, button.active {
+    background-color: $button-active-background;
+    color: $button-active-color;
+}
+
+// .button-secondary styling
+.button-secondary {
+    background-color: $button-secondary-background;
+    color: $button-secondary-color;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+    background-color: $button-secondary-hover-background;
+    color: $button-secondary-hover-color;
+}
+.button-secondary:active,
+.button-secondary.uk-active {
+    background-color: $button-secondary-active-background;
+    color: $button-secondary-active-color;
+}
+
+// .button-danger styling
+.button-danger {
+    background-color: $button-danger-background;
+    color: $button-danger-color;
+}
+.button-danger:hover,
+.button-danger:focus {
+    background-color: $button-danger-hover-background;
+    color: $button-danger-hover-color;
+}
+.button-danger:active,
+.button-danger.uk-active {
+    background-color: $button-danger-active-background;
+    color: $button-danger-active-color;
+}
+
+// button disabled style
+.button:disabled, button:disabled,
+.button-secondary:disabled, button:disabled,
+.button-danger:disabled , button:disabled{
+    background-color: $button-disabled-background;
+    color: $button-disabled-color;
+    border-color: $button-disabled-border;
+}
+
+// button sizes small - large
+.button-small {
+    padding: 0 $button-small-padding-horizontal;
+    line-height: $button-small-line-height;
+    font-size: $button-small-font-size;
+}
+.button-large {
+    padding: 0 $button-large-padding-horizontal;
+    line-height: $button-large-line-height;
+    font-size: $button-large-font-size;
+}
+
+// text
+.button-text {
+    padding: 0;
+    line-height: $button-text-line-height;
+    background: none;
+    color: $button-text-color;
+}
+.button-text:hover,
+.button-text:focus {
+    color: $button-text-hover-color;
+}
+.button-text:disabled {
+    color: $button-text-disabled-color;
+}
+
+// link
+.button-link {
+    padding: 0;
+    line-height: $button-link-line-height;
+    background: none;
+    color: $button-link-color;
+}
+.button-link:hover,
+.button-link:focus {
+    color: $button-link-hover-color;
+    text-decoration: $button-link-hover-text-decoration;
+}
+.button-link:disabled {
+    color: $button-link-disabled-color;
+    text-decoration: none;
+}

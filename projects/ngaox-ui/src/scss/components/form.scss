@@ -1,0 +1,19 @@
+/* ========================================================================
+Form:
+    input
+========================================================================== */
+
+input {
+    border-radius: 0;
+    font: inherit;
+    overflow: visible;
+    max-width: 100%;
+    width: 100%;
+    border: 0 none;
+    padding: 0 10px;
+    background: $muted-background;
+    color: $color;
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}

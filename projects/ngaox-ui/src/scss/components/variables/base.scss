@@ -1,0 +1,72 @@
+// scrollbar
+$scrollbar-width: $fontSize/2;
+$scrollbar-height: $scrollbar-width * 2;
+$scrollbar-thumb-color: #1976d2;
+$scrollbar-track-color: #bbb;
+// root ( html - body )
+$root-background: #ecf0f1;
+$root-color: $color;
+$root-lineHeight: $lineHeight;
+$root-fontFamily: $fontFamily;
+$root-fontSize: $fontSize;
+$root-fontWeight: $fontWeight;
+// links
+$link-color: #0f6ecd !default;
+$link-textDecoration: none !default;
+$link-hover-color: #1e87f0 !default;
+$link-hover-textDecoration: underline !default;
+// texts
+$strong-fontWeight: bolder !default;
+$em-color: $danger-background;
+$quote-fontStyle: italic;
+// headings
+$heading-fontFamily: sans-serif;
+$heading-fontWeight: normal !default;
+$heading-color: $emphasis-color;
+$heading-textTransform: none !default;
+$heading-margin-top: $margin !default;
+/* sizes */
+$h1-fontSize: $xxlarge-fontSize !default;
+$h1-lineHeight: 1.2 !default;
+$h2-fontSize: $xlarge-fontSize !default;
+$h2-lineHeight: 1.3 !default;
+$h3-fontSize: $large-fontSize !default;
+$h3-lineHeight: 1.4 !default;
+$h4-fontSize: $medium-fontSize !default;
+$h4-lineHeight: 1.4 !default;
+$h5-fontSize: $fontSize !default;
+$h5-lineHeight: 1.4 !default;
+$h6-fontSize: $small-fontSize !default;
+$h6-lineHeight: 1.4 !default;
+/* list */
+$list-paddingLeft: 30px !default;
+/* hr */
+$hr-margin-vertical: $margin !default;
+$hr-border-width: $border-width !default;
+$hr-border: $border;
+/* code */
+$code-fontFamily: Consolas, monaco, monospace !default;
+$code-fontSize: $small-fontSize;
+$code-color: $danger-background;
+$code-padding-vertical: 2px !default;
+$code-padding-horizontal: 6px !default;
+$code-background: $muted-background !default;
+/* pre */
+$pre-fontFamily: $code-fontFamily !default;
+$pre-lineHeight: $lineHeight !default;
+$pre-fontSize: $small-fontSize !default;
+$pre-color: $color !default;
+$pre-padding: 10px !default;
+$pre-border-width: $border-width;
+$pre-border: $border;
+$pre-border-radius: 3px !default;
+$pre-background: $background;
+/* blockquote */
+$blockquote-fontSize: $medium-fontSize;
+$blockquote-lineHeight: 1.5;
+$blockquote-fontStyle: italic;
+$blockquote-color: $emphasis-color;
+$blockquote-margin-vertical: $margin;
+//section
+$selection-background: #39f !default;
+$selection-color: $inverse-color !default;

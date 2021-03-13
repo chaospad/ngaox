@@ -1,0 +1,12 @@
+
+.containner.center-child {
+    overflow: auto;
+    background-color: $dark-background;
+    padding: $padding;
+}
+.card {
+    box-shadow: $boxShadow;
+    position: relative;
+    transition: box-shadow .1s ease-in-out;
+    background: $background;
+}

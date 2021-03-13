@@ -1,0 +1,53 @@
+/* ========================================================================
+Utilities:
+    .float-${ left | right }
+    .overflow-${ hidden | auto }
+    .resize | .resize-vertical
+    .display-${ block | inline | inline-block }
+    .inline | .inline-clip
+    .border-${ circle | rounded }
+    .box-shadow-${ small | medium | large}
+========================================================================== */
+// variables
+$border-rounded: 10px;
+$small-box-shadow: $boxShadow;
+$medium-box-shadow: $boxShadow;
+$large-box-shadow: $boxShadow;
+
+// float
+.float-left { float: left; }
+.float-right { float: right; }
+
+// overflow
+.overflow-hidden { overflow: hidden; }
+.overflow-auto {  overflow: auto; }
+
+// resize
+.resize { resize: both; }
+.resize-vertical { resize: vertical; }
+
+// display
+.display-block { display: block !important; }
+.display-inline { display: inline !important; }
+.display-inline-block { display: inline-block !important; }
+
+
+// inline
+.inline {
+    @extend .display-inline-block;
+    position: relative;
+    max-width: 100%;
+    vertical-align: middle;
+    &-clip {
+        overflow: hidden;
+    }
+}
+
+// border
+.border-circle { border-radius: 50%; }
+.border-rounded { border-radius: $border-rounded; }
+
+// Box-shadow
+.box-shadow-small { box-shadow: $small-box-shadow; }
+.box-shadow-medium { box-shadow: $medium-box-shadow; }
+.box-shadow-large { box-shadow: $large-box-shadow; }
