@@ -29,7 +29,7 @@ jobs:
 
       - name: Prepare dist folder
         run: |
-          cp -a /projects/ngaox-ui/dist/. /dest/
+          cp -a projects/ngaox-ui/dist/. dest/ngaox-ui/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
