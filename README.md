@@ -1,5 +1,8 @@
-# Ngaox
-![GitHub](https://img.shields.io/github/license/chaospad/ngaox)
+<h1 align="center">NGAOX</h1>
+
+<p align="center"> 
+    <img src="https://img.shields.io/github/license/chaospad/ngaox" alt="GitHub License"/>
+</p>
 
 - [@rabraghib](https://twitter.com/rabraghib) - Get the latest on Twitter
 - Chackout project [features & plan lists](TODO.md)
