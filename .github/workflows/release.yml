@@ -13,8 +13,11 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         registry-url: 'https://registry.npmjs.org'
-    - run: cd ngaox
-    - run: npm publish
+
+    - name: publish ngaox
+      run: |
+        cd ngaox
+        npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   publish-ngaoxUi:
@@ -28,7 +31,9 @@ jobs:
       with:
         node-version: "14"
         registry-url: 'https://registry.npmjs.org'
-    - run: cd ngaox-ui
-    - run: npm publish
+    - name: publish ngaox-ui
+      run: |
+        cd ngaox-ui
+        npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
