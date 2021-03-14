@@ -1,5 +1,8 @@
-# Components and styles for Chaospad
+# Ngaox
 ![GitHub](https://img.shields.io/github/license/chaospad/ngaox)
+
+- [@rabraghib](https://twitter.com/rabraghib) - Get the latest on Twitter
+- Chackout project [features & plan lists](TODO.md)
 
 ---
 
@@ -39,11 +42,4 @@ You can install ngaox-design in any kind of web app using:
 ---
 
 ## License
-This project is licensed under the terms of the [MIT License](LICENSE) 
-
----
-
-## Author Info
-
-- Twitter - [@rabraghib](https://twitter.com/rabraghib)
-- Instagram - [@rabraghib](https://instagram.com/rabraghib)
+This project is licensed under the terms of the [MIT License](LICENSE)
