@@ -27,7 +27,9 @@ You can install ngaox in an angular app via:
 - yarn: `yarn add @chaospad/ngaox`
 
 You can install ngaox-design in any kind of web app using:
-- cdn: https://cdn.jsdelivr.net/npm/@chaospad/ngaox-design/css/ngaox.css
+- cdn:
+  - css: https://cdn.jsdelivr.net/npm/@chaospad/ngaox-design/css/ngaox.css
+  - js: https://cdn.jsdelivr.net/npm/@chaospad/ngaox-design/js/ngaox.js
 - NPM: `npm install @chaospad/ngaox-design`
 - yarn: `yarn add @chaospad/ngaox-design`
 
