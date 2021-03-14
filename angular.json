@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/ngaox",
       "sourceRoot": "projects/ngaox/src",
-      "prefix": "lib",
+      "prefix": "ngaox",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

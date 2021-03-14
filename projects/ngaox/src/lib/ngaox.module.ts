@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
-import { NgaoxComponent } from './ngaox.component';
-
-
 
 @NgModule({
-  declarations: [NgaoxComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [NgaoxComponent]
+  exports: []
 })
 export class NgaoxModule { }
