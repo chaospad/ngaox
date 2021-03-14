@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  build-deploy-libraries:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -15,6 +15,7 @@ jobs:
         run: |
           npm install
           npm run build:prod
+          npm run build:docs
 
       - name: Prepare dist folder
         run: |
