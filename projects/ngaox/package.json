@@ -1,5 +1,5 @@
 {
-  "name": "ngaox",
+  "name": "@chaospad/ngaox",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^11.2.5",

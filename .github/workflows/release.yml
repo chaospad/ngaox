@@ -17,7 +17,7 @@ jobs:
     - name: publish ngaox
       run: |
         cd ngaox
-        npm publish
+        npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   publish-ngaoxUi:
@@ -34,6 +34,6 @@ jobs:
     - name: publish ngaox-ui
       run: |
         cd ngaox-ui
-        npm publish
+        npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
