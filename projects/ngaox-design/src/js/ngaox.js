@@ -1,0 +1,1 @@
+console.log("@chaospad/ngaox-design")

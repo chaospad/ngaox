@@ -21,9 +21,9 @@ jobs:
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-    - name: publish ngaox-ui
+    - name: publish ngaox-design
       run: |
-        cd ngaox-ui
+        cd ngaox-design
         npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
