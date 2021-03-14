@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  build-deploy:
+  build-deploy-libraries:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️

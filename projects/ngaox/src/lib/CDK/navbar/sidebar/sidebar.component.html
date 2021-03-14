@@ -1,0 +1,37 @@
+<div class="navbar-box">
+    <header class="navbar-header">
+        <img width="80px" src="https://chaospad.github.io/assets/chaospad/logo-navbar.svg" alt="Chaospad">
+    </header>
+    <hr>
+    <div class="navbar">
+        <ng-template [ngTemplateOutlet]="navbar" [ngTemplateOutletContext]="{
+            $implicit: routesList,
+            base: '/'
+        }"></ng-template>
+    </div>
+    <hr>
+    <div class="navbar-footer">
+        <b style="text-align: center;display:block;">
+            Chaospad © 2021
+        </b>
+        <br>
+    </div>
+</div>
+
+<ng-template #navbar let-base="base" let-routes>
+    <li *ngFor="let route of routes">
+        <a [routerLink]="[ base + route.path ]"
+            routerLinkActive="active" [routerLinkActiveOptions]="{exact: (!route.subroutes) ? true : false }">
+            <span class="icon">
+                <i [class]="route.logo"></i>
+            </span>
+            <span class="title">{{ route.title }}</span>
+        </a>
+        <div class="subroutes" *ngIf="route.subroutes">
+            <ng-template [ngTemplateOutlet]="navbar" [ngTemplateOutletContext]="{
+                $implicit: route.subroutes,
+                base: (base + route.path + '/')
+            }"></ng-template>
+        </div>
+    </li>
+</ng-template>

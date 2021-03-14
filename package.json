@@ -11,7 +11,10 @@
     "build:prod:ngaox": "ng build ngaox --prod",
     "start:ngaoxUi": "cd projects/ngaox-ui/ && npm start",
     "build:ngaoxUi": "cd projects/ngaox-ui/ && npm run build",
-    "build:prod:ngaoxUi": "cd projects/ngaox-ui/ && npm run build:prod"
+    "build:prod:ngaoxUi": "cd projects/ngaox-ui/ && npm run build:prod",
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
+    "storybook": "npm run docs:json && start-storybook -p 6006",
+    "build-storybook": "npm run docs:json && build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -23,19 +26,23 @@
     "@angular/platform-browser": "~11.2.5",
     "@angular/platform-browser-dynamic": "~11.2.5",
     "@angular/router": "~11.2.5",
-    "node-sass": "^5.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "webpack": "^5.25.0",
-    "webpack-cli": "^4.5.0",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.3",
     "@angular/cli": "~11.2.4",
     "@angular/compiler-cli": "~11.2.5",
+    "@babel/core": "^7.13.10",
+    "@compodoc/compodoc": "^1.1.11",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/angular": "^6.1.21",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "babel-loader": "^8.2.2",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
