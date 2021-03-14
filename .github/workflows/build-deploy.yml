@@ -17,6 +17,10 @@ jobs:
           npm run build:prod
           npm run build:docs
 
+      - name: Prepare dist folder
+        run: |
+          cp -a projects/ngaox-ui/dist/. dist/ngaox-ui
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
