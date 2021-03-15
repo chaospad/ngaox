@@ -5,10 +5,10 @@
   "style": "css/ngaox.css",
   "main": "js/ngaox.js",
   "scripts": {
-    "start": "npm run build-js && npm run build-scss -- -w",
-    "build": "npm run build-js && npm run build-scss -- --output-style compressedt",
+    "start": "npm run build-js && npm run build-scss -- --watch",
+    "build": "npm run build-js && npm run build-scss -- --style=compressed",
     "build:prod": "npm run build && npm run copy-to-dist",
-    "build-scss": "node-sass src/scss/themes/ -o dist/css/",
+    "build-scss": "sass src/scss/themes:dist/css",
     "build-js": "webpack",
     "copy-to-dist": "cp package.json dist/package.json && cp README.md dist/README.md"
   },

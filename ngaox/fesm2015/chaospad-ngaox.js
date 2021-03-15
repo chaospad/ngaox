@@ -141,13 +141,13 @@ class SidebarComponent {
 SidebarComponent.decorators = [
     { type: Component, args: [{
                 selector: 'ngaox-sidebar',
-                template: "<div class=\"navbar-box\">\n    <header class=\"navbar-header\">\n        <img width=\"80px\" src=\"https://chaospad.github.io/assets/chaospad/logo-navbar.svg\" alt=\"Chaospad\">\n    </header>\n    <hr>\n    <div class=\"navbar\">\n        <ng-template [ngTemplateOutlet]=\"navbar\" [ngTemplateOutletContext]=\"{\n            $implicit: routes,\n            base: '/'\n        }\"></ng-template>\n    </div>\n    <hr>\n    <div class=\"navbar-footer\">\n        <b style=\"text-align: center;display:block;\">\n            Chaospad \u00A9 2021\n        </b>\n        <br>\n    </div>\n</div>\n\n<ng-template #navbar let-base=\"base\" let-routesList>\n    <li *ngFor=\"let route of routesList\">\n        <a [routerLink]=\"[ base + route.path ]\"\n            routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: (!route.subroutes) ? true : false }\">\n            <span class=\"icon\">\n                <i [class]=\"route.logo\"></i>\n            </span>\n            <span class=\"title\">{{ route.title }}</span>\n        </a>\n        <div class=\"subroutes\" *ngIf=\"route.subroutes\">\n            <ng-template [ngTemplateOutlet]=\"navbar\" [ngTemplateOutletContext]=\"{\n                $implicit: route.subroutes,\n                base: (base + route.path + '/')\n            }\"></ng-template>\n        </div>\n    </li>\n</ng-template>",
+                template: "<div class=\"navbar-box\">\n    <header class=\"navbar-header\">\n        <img width=\"80px\" src=\"https://chaospad.github.io/assets/chaospad/logo-navbar.svg\" alt=\"Chaospad\">\n    </header>\n    <div class=\"navbar\">\n        <ng-template [ngTemplateOutlet]=\"navbar\" [ngTemplateOutletContext]=\"{\n            $implicit: routes,\n            base: '/'\n        }\"></ng-template>\n    </div>\n    <div class=\"navbar-footer\">\n        Chaospad \u00A9 2021\n    </div>\n</div>\n\n<ng-template #navbar let-base=\"base\" let-routesList>\n    <li *ngFor=\"let route of routesList\">\n        <a [routerLink]=\"[ base + route.path ]\"\n            routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: (!route.subroutes) ? true : false }\">\n            <span class=\"icon\">\n                <i [class]=\"route.logo\"></i>\n            </span>\n            <span class=\"title\">{{ route.title }}</span>\n        </a>\n        <div class=\"subroutes\" *ngIf=\"route.subroutes\">\n            <ng-template [ngTemplateOutlet]=\"navbar\" [ngTemplateOutletContext]=\"{\n                $implicit: route.subroutes,\n                base: (base + route.path + '/')\n            }\"></ng-template>\n        </div>\n    </li>\n</ng-template>",
                 styles: ['']
             },] }
 ];
 SidebarComponent.ctorParameters = () => [];
 SidebarComponent.propDecorators = {
-    routes: [{ type: Input, args: ["routes",] }]
+    routes: [{ type: Input }]
 };
 
 const EXPORTS = [
@@ -163,8 +163,7 @@ NavbarModule.decorators = [
                     RouterModule
                 ],
                 exports: [
-                    ...EXPORTS,
-                    RouterModule
+                    ...EXPORTS
                 ]
             },] }
 ];
