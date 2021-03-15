@@ -508,6 +508,71 @@
                 },] }
     ];
 
+    var FooterMinComponent = /** @class */ (function () {
+        function FooterMinComponent() {
+        }
+        FooterMinComponent.prototype.ngOnInit = function () {
+        };
+        return FooterMinComponent;
+    }());
+    FooterMinComponent.decorators = [
+        { type: i0.Component, args: [{
+                    selector: 'ngaox-footer-min',
+                    template: "<div class=\"footer-min\">\n    <p>copyright &copy;2021 Chaospad. Created by <span>Raby\u00E2 Raghib</span></p>\n</div>"
+                },] }
+    ];
+    FooterMinComponent.ctorParameters = function () { return []; };
+
+    var FooterComponent = /** @class */ (function () {
+        function FooterComponent() {
+        }
+        FooterComponent.prototype.ngOnInit = function () {
+        };
+        return FooterComponent;
+    }());
+    FooterComponent.decorators = [
+        { type: i0.Component, args: [{
+                    selector: 'ngaox-footer',
+                    template: "<footer>\n    <ngaox-footer-content></ngaox-footer-content>\n    <ngaox-footer-min></ngaox-footer-min>\n</footer>"
+                },] }
+    ];
+    FooterComponent.ctorParameters = function () { return []; };
+
+    var FooterContentComponent = /** @class */ (function () {
+        function FooterContentComponent() {
+        }
+        FooterContentComponent.prototype.ngOnInit = function () {
+        };
+        return FooterContentComponent;
+    }());
+    FooterContentComponent.decorators = [
+        { type: i0.Component, args: [{
+                    selector: 'ngaox-footer-content',
+                    template: "<div class=\"footer-content\">\n    <h3>Chaospad</h3>\n    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>\n    <ul class=\"socials\">\n        <li><a href=\"https://facebook.com/rabraghib\">\n            <i class=\"fab fa-facebook\"></i></a></li>\n        <li><a href=\"https://twitter.com/intent/follow?screen_name=rabraghib\">\n            <i class=\"fab fa-twitter\"></i></a></li>\n        <li><a href=\"https://linkedin.com/in/rabraghib\">\n            <i class=\"fab fa-linkedin\"></i></a></li>\n    </ul>\n</div>"
+                },] }
+    ];
+    FooterContentComponent.ctorParameters = function () { return []; };
+
+    var EXPORTS$1 = [
+        FooterComponent,
+        FooterMinComponent,
+        FooterContentComponent
+    ];
+    var FooterModule = /** @class */ (function () {
+        function FooterModule() {
+        }
+        return FooterModule;
+    }());
+    FooterModule.decorators = [
+        { type: i0.NgModule, args: [{
+                    declarations: __spread(EXPORTS$1),
+                    imports: [
+                        common.CommonModule
+                    ],
+                    exports: __spread(EXPORTS$1)
+                },] }
+    ];
+
     /*
      * Public API Surface of ngaox
      */
@@ -519,6 +584,7 @@
     exports.CareerModule = CareerModule;
     exports.ContactInfoModule = ContactInfoModule;
     exports.FileModule = FileModule;
+    exports.FooterModule = FooterModule;
     exports.NavbarModule = NavbarModule;
     exports.NgaoxModule = NgaoxModule;
     exports.PostModule = PostModule;
@@ -528,6 +594,9 @@
     exports.TopicModule = TopicModule;
     exports.UserModule = UserModule;
     exports.ɵa = SidebarComponent;
+    exports.ɵb = FooterComponent;
+    exports.ɵc = FooterMinComponent;
+    exports.ɵd = FooterContentComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
