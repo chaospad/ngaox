@@ -3,6 +3,13 @@ import { Title, Meta } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+// export interface Meta {
+//     id: number;
+//     key: string;
+//     value: string;
+//     post?: Post | string; // private
+// }
+
 class SeoService {
     constructor(titleService, metaService) {
         this.titleService = titleService;

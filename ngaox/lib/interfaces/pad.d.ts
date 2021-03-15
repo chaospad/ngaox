@@ -12,29 +12,35 @@ export interface File {
     id: number;
     title: string;
     path: string;
-    type: Topic;
-    owner: User;
-    tags: Topic[];
+    type: Topic | string;
+    owner: User | string;
+    tags: Topic[] | string[];
+    visibility: Topic | string;
+    updatedAt: Date;
+    createdAt: Date;
+}
+export interface pad {
+    id: number;
+    padname: string;
+    name: string;
+    picture: File | string;
+    background: File | string;
+    description: string;
+    owners: User[] | string[];
+    articles: Post[] | string[];
     visibility: Topic;
-    uplaodedAt: Date;
+    updatedAt: Date;
+    createdAt: Date;
 }
 export interface Post {
     id: number;
-    title: string;
-    thumbnail: File;
-    type: Topic;
+    type: Topic | string;
     content: string;
-    owner: User;
-    metas?: Meta[];
-    replyingTo?: Comment;
-    comments?: Post[];
-    visibility: Topic;
-    edited: boolean;
+    owner: User | string;
+    tags: Topic[] | string[];
+    replyingTo?: Comment | string;
+    comments?: Post[] | string[];
+    visibility: Topic | string;
+    updatedAt: Date;
     createdAt: Date;
-}
-export interface Meta {
-    id: number;
-    key: string;
-    value: string;
-    post?: Post;
 }

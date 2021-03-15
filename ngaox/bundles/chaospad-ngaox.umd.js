@@ -4,6 +4,13 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory((global.chaospad = global.chaospad || {}, global.chaospad.ngaox = {}), global.ng.core, global.ng.platformBrowser, global.ng.common, global.ng.router));
 }(this, (function (exports, i0, i1, common, router) { 'use strict';
 
+    // export interface Meta {
+    //     id: number;
+    //     key: string;
+    //     value: string;
+    //     post?: Post | string; // private
+    // }
+
     var SeoService = /** @class */ (function () {
         function SeoService(titleService, metaService) {
             this.titleService = titleService;
