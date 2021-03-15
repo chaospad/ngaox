@@ -45,5 +45,5 @@ const routes = [
 
 export const Default = Template.bind({});
 Default.args = {
-    routesList: routes,
+    routes: routes,
 };

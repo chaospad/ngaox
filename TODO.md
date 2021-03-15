@@ -15,4 +15,4 @@
 - [ ] chaospad-post
 ---
 ## Services list
-- [ ] SeoService
+- [x] SeoService

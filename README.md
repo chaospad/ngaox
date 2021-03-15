@@ -14,7 +14,7 @@
 | Package                   | Description                                                                         | 
 | ------------------------- | ----------------------------------------------------------------------------------- | 
 | `@chaospad/ngaox`         | UI components & front-end stuffs for Angular applications used in chaospad apps 👊. |
-| `@chaospad/ngaox-design`      | lightweight CSS framework which is styling `@chaospad/ngaox`           |
+| `@chaospad/ngaox-ui`      | lightweight CSS framework which is styling `@chaospad/ngaox`           |
 
 #### Technologies
 
@@ -29,12 +29,12 @@ You can install ngaox in an angular app via:
 - NPM: `npm install @chaospad/ngaox`
 - yarn: `yarn add @chaospad/ngaox`
 
-You can install ngaox-design in any kind of web app using:
+You can install ngaox-ui in any kind of web app using:
 - cdn:
-  - css: https://cdn.jsdelivr.net/npm/@chaospad/ngaox-design/css/ngaox.css
-  - js: https://cdn.jsdelivr.net/npm/@chaospad/ngaox-design/js/ngaox.js
-- NPM: `npm install @chaospad/ngaox-design`
-- yarn: `yarn add @chaospad/ngaox-design`
+  - css: https://cdn.jsdelivr.net/npm/@chaospad/ngaox-ui/css/ngaox.css
+  - js: https://cdn.jsdelivr.net/npm/@chaospad/ngaox-ui/js/ngaox.js
+- NPM: `npm install @chaospad/ngaox-ui`
+- yarn: `yarn add @chaospad/ngaox-ui`
 
 ---
 

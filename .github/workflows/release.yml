@@ -20,7 +20,7 @@ jobs:
         npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-  publish-ngaox-design:
+  publish-ngaox-ui:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -31,9 +31,9 @@ jobs:
       with:
         registry-url: 'https://registry.npmjs.org'
 
-    - name: publish ngaox-design
+    - name: publish ngaox-ui
       run: |
-        cd ngaox-design
+        cd ngaox-ui
         npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

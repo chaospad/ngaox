@@ -1,18 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { route } from '../../../interfaces/ngaox';
 
 @Component({
   selector: 'ngaox-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styles: ['']
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
 
-  @Input("routes") routesList:route[] = [];
+  @Input("routes") routes:route[] = [];
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

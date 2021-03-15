@@ -1,9 +1,9 @@
 {
-  "name": "@chaospad/ngaox-design",
+  "name": "@chaospad/ngaox-ui",
   "version": "0.0.1",
   "description": "small CSS framework used by all chaospad apps.",
-  "style": "css/ngaox-design.css",
-  "main": "js/ngaox-design.js",
+  "style": "css/ngaox.css",
+  "main": "js/ngaox.js",
   "scripts": {
     "start": "npm run build-js && npm run build-scss -- -w",
     "build": "npm run build-js && npm run build-scss -- --output-style compressedt",

@@ -5,7 +5,7 @@
     <hr>
     <div class="navbar">
         <ng-template [ngTemplateOutlet]="navbar" [ngTemplateOutletContext]="{
-            $implicit: routesList,
+            $implicit: routes,
             base: '/'
         }"></ng-template>
     </div>
@@ -18,8 +18,8 @@
     </div>
 </div>
 
-<ng-template #navbar let-base="base" let-routes>
-    <li *ngFor="let route of routes">
+<ng-template #navbar let-base="base" let-routesList>
+    <li *ngFor="let route of routesList">
         <a [routerLink]="[ base + route.path ]"
             routerLinkActive="active" [routerLinkActiveOptions]="{exact: (!route.subroutes) ? true : false }">
             <span class="icon">

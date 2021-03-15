@@ -10,9 +10,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "build:prod:ngaox": "ng build ngaox --prod",
-    "start:ngaoxUi": "cd projects/ngaox-design/ && npm start",
-    "build:ngaoxUi": "cd projects/ngaox-design/ && npm run build",
-    "build:prod:ngaoxUi": "cd projects/ngaox-design/ && npm run build:prod",
+    "start:ngaoxUi": "cd projects/ngaox-ui/ && npm start",
+    "build:ngaoxUi": "cd projects/ngaox-ui/ && npm run build",
+    "build:prod:ngaoxUi": "cd projects/ngaox-ui/ && npm run build:prod",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook"

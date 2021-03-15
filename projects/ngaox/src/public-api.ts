@@ -7,6 +7,9 @@ export * from './lib/interfaces/ngaox';
 export * from './lib/interfaces/pad';
 export * from './lib/interfaces/profile';
 
+// Services
+export * from './lib/services/seo.service';
+
 // main modules
 export * from './lib/ngaox.module';
 
