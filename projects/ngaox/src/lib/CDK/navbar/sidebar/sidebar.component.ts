@@ -8,8 +8,7 @@ import { route } from '../../../interfaces/ngaox';
 })
 export class SidebarComponent {
 
-  @Input("routes") routes:route[] = [];
+  @Input() routes:route[] = [];
 
   constructor() { }
-
 }

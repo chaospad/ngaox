@@ -2,19 +2,14 @@
     <header class="navbar-header">
         <img width="80px" src="https://chaospad.github.io/assets/chaospad/logo-navbar.svg" alt="Chaospad">
     </header>
-    <hr>
     <div class="navbar">
         <ng-template [ngTemplateOutlet]="navbar" [ngTemplateOutletContext]="{
             $implicit: routes,
             base: '/'
         }"></ng-template>
     </div>
-    <hr>
     <div class="navbar-footer">
-        <b style="text-align: center;display:block;">
-            Chaospad © 2021
-        </b>
-        <br>
+        Chaospad © 2021
     </div>
 </div>
 

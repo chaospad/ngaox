@@ -3,19 +3,21 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve dev",
     "build": "ng build",
     "build:prod": "npm run build:prod:ngaox && npm run build:prod:ngaoxUi",
     "build:docs": "npm run docs:json && build-storybook -o dist/docs",
     "test": "ng test",
     "lint": "ng lint",
+    "build:ngaox": "npm run build:prod:ngaox",
     "build:prod:ngaox": "ng build ngaox --prod",
     "start:ngaoxUi": "cd projects/ngaox-ui/ && npm start",
     "build:ngaoxUi": "cd projects/ngaox-ui/ && npm run build",
     "build:prod:ngaoxUi": "cd projects/ngaox-ui/ && npm run build:prod",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook"
+    "build-storybook": "npm run docs:json && build-storybook",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -27,8 +29,8 @@
     "@angular/platform-browser": "~11.2.5",
     "@angular/platform-browser-dynamic": "~11.2.5",
     "@angular/router": "~11.2.5",
-    "node-sass": "^5.0.0",
     "rxjs": "~6.6.0",
+    "sass": "^1.32.8",
     "tslib": "^2.0.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.5.0",

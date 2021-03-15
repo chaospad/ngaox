@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
     .hashtag:hover + .topic.preview {
-        @extend .drop.open;
+        @extend .drop,.open;
     } 
 }
 .topic{

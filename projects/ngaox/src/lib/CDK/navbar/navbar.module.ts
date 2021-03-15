@@ -14,8 +14,7 @@ const EXPORTS = [
     RouterModule
   ],
   exports: [
-    ...EXPORTS,
-    RouterModule
+    ...EXPORTS
   ]
 })
 export class NavbarModule { }

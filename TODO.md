@@ -1,18 +1,19 @@
 # ngaox
+## Services list
+- [x] SeoService
 ## Pipes list
 - [ ] summary
 - [ ] period
 - [ ] marked
 ---
 ## Components list
-- [ ] chaospad-pad
-- [ ] chaospad-topic
-- [ ] chaospad-file
-- [ ] chaospad-user
-- [ ] chaospad-career
-- [ ] chaospad-project
-- [ ] chaospad-contact-info
-- [ ] chaospad-post
+- [x] ngaox-sidebar
+- [ ] ngaox-footer
+- [ ] ngaox-topic
+- [ ] ngaox-file
+- [ ] ngaox-user
+- [ ] ngaox-career
+- [ ] ngaox-project
+- [ ] ngaox-contact-info
+- [ ] ngaox-post
 ---
-## Services list
-- [x] SeoService

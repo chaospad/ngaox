@@ -4,8 +4,17 @@
     color: #fff;
     height: 100%;
     box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
-    .navbar-header {
-        padding: 20px 20px 0;
+    .navbar-header,
+    .navbar-footer {
+        padding: 20px;
+        font-weight: bold;
+        text-align: center;
+        &.navbar-footer {
+            border-top: 2px solid #e5e5e5;
+        }
+        &.navbar-header {
+            border-bottom: 2px solid #e5e5e5;
+        }
     }
     .navbar {
         li {
