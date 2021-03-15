@@ -1,0 +1,32 @@
+{
+  "name": "@chaospad/ngaox-ui",
+  "version": "0.0.3",
+  "description": "small CSS framework used by all chaospad apps.",
+  "style": "css/ngaox.css",
+  "main": "js/ngaox.js",
+  "scripts": {
+    "start": "npm run build-js && npm run build-scss -- -w",
+    "build": "npm run build-js && npm run build-scss -- --output-style compressedt",
+    "build:prod": "npm run build && npm run copy-to-dist",
+    "build-scss": "node-sass src/scss/themes/ -o dist/css/",
+    "build-js": "webpack",
+    "copy-to-dist": "cp package.json dist/package.json && cp README.md dist/README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaospad/ngaox.git"
+  },
+  "keywords": [
+    "ngaox",
+    "SCSS",
+    "JS",
+    "ui/ux",
+    "Front-end"
+  ],
+  "author": "Rabyâ Raghib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaospad/ngaox/issues"
+  },
+  "homepage": "https://github.com/chaospad/ngaox#readme"
+}

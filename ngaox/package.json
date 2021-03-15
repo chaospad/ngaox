@@ -1,0 +1,37 @@
+{
+  "name": "@chaospad/ngaox",
+  "version": "0.0.3",
+  "description": "💢 common angular elements (components/services/pipes/...) for all chaospad apps 👊.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaospad/ngaox.git"
+  },
+  "keywords": [
+    "angular",
+    "typescript",
+    "chaospad",
+    "ngaox"
+  ],
+  "author": "Rabyâ Raghib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaospad/ngaox/issues"
+  },
+  "homepage": "https://github.com/chaospad/ngaox#readme",
+  "peerDependencies": {
+    "@angular/common": "^11.2.5",
+    "@angular/core": "^11.2.5",
+    "@chaospad/ngaox-ui": "^0.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/chaospad-ngaox.umd.js",
+  "module": "fesm2015/chaospad-ngaox.js",
+  "es2015": "fesm2015/chaospad-ngaox.js",
+  "esm2015": "esm2015/chaospad-ngaox.js",
+  "fesm2015": "fesm2015/chaospad-ngaox.js",
+  "typings": "chaospad-ngaox.d.ts",
+  "metadata": "chaospad-ngaox.metadata.json",
+  "sideEffects": false
+}
