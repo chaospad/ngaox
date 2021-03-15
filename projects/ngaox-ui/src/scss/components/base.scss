@@ -103,7 +103,9 @@ pre,
 address,
 fieldset,
 figure {
-    margin-bottom: $margin-vertical;
+    &:not(:last-child){
+        margin-bottom: $margin-vertical;
+    }
 }
 
 /* Headings

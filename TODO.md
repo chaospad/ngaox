@@ -8,7 +8,7 @@
 ---
 ## Components list
 - [x] ngaox-sidebar
-- [ ] ngaox-footer
+- [x] ngaox-footer
 - [ ] ngaox-topic
 - [ ] ngaox-file
 - [ ] ngaox-user

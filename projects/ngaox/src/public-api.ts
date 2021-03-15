@@ -27,3 +27,4 @@ export * from './lib/profile/project/project.module';
 
 // CDK modules
 export * from './lib/CDK/navbar/navbar.module';
+export * from './lib/CDK/footer/footer.module';
