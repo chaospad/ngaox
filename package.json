@@ -6,7 +6,7 @@
     "start": "ng serve dev --open",
     "build": "ng build",
     "build:prod": "npm run build:prod:ngaox && npm run build:prod:ngaoxUi",
-    "build:docs": "npm run docs:json && build-storybook -o dist/docs",
+    "build:docs": "npm run docs:json && build-storybook -o dist",
     "test": "ng test",
     "lint": "ng lint",
     "build:ngaox": "npm run build:prod:ngaox",

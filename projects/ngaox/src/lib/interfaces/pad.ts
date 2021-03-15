@@ -14,43 +14,48 @@ export interface File {
     id: number;
     title: string;
     path: string; // unique profiles/photo.fs
-    type: Topic; // Topic ID <type:file>
-    owner: User;
-    tags: Topic[];
-    visibility: Topic; // Topic ID <type:visibility>
-    uplaodedAt: Date;
+    type: Topic|string; // Topic ID <type:file>
+    owner: User|string;
+    tags: Topic[]|string[];
+    visibility: Topic | string; // Topic ID <type:visibility>
+    
+    updatedAt: Date;
+    createdAt: Date;
 }
 
-/*export interface pad {
+export interface pad {
     id: number;
     padname: string;
     name: string;
     picture: File|string;
     background: File|string;
     description: string;// markdown
-    owner: User;// user ID
-    blogers: User[]|string[];// user ID
+    owners: User[] | string[];// user ID
     articles: Post[]|string[];// post <type: article>
     visibility: Topic; // Topic ID
-}*/
+    updatedAt: Date;
+    createdAt: Date;
+}
 
 export interface Post {
     id: number;
-    title: string; // 100
-    thumbnail: File;
-    type: Topic; // Topic IRI <type:post>
+    // title: string; // 100
+    // thumbnail: File;
+    type: Topic | string; // Topic IRI <type:post>
     content: string;// markdown Text
-    owner: User;// user IRI
-    metas?: Meta[]; // Meta IRI
-    replyingTo?: Comment;
-    comments?: Post[]; // Post IRI <type:post=comment>
-    visibility: Topic; // Topic IRI <type:visibility>
-    edited: boolean; // default false
+    owner: User | string;// user IRI
+    tags: Topic[] | string[];
+    // metas?: Meta[] | string[]; // Meta IRI
+    replyingTo?: Comment | string;
+    comments?: Post[] | string[]; // Post IRI <type:post=comment>
+    visibility: Topic | string; // Topic IRI <type:visibility>
+    
+    updatedAt: Date;
     createdAt: Date;
 }
-export interface Meta {
-    id: number;
-    key: string;
-    value: string;
-    post?: Post; // private
-}
+// export interface Meta {
+//     id: number;
+//     key: string;
+//     value: string;
+//     post?: Post | string; // private
+// }

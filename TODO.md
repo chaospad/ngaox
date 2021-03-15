@@ -9,6 +9,8 @@
 ## Components list
 - [x] ngaox-sidebar
 - [x] ngaox-footer
+  - [x] ngaox-footer-min
+  - [x] ngaox-footer-content
 - [ ] ngaox-topic
 - [ ] ngaox-file
 - [ ] ngaox-user

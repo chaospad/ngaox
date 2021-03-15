@@ -14,8 +14,8 @@ jobs:
       - name: Install & Build
         run: |
           npm install
-          npm run build:prod
           npm run build:docs
+          npm run build:prod
 
       - name: Prepare dist folder
         run: |
